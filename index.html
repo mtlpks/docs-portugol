@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Technical Documentation Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="Portugol">Portugol</header>
+      <a class="nav-link" href="./#Introdução">Introdução</a>
+      <a class="nav-link" href="./#Portugol_Studio">Portugol Studio</a>
+      <a class="nav-link" href="./#Entrada_e_Saída_de_dados"
+        >Entrada/Saída de dados</a
+      >
+      <a class="nav-link" href="./#Variáveis">Variáveis</a>
+      <a class="nav-link" href="./#Estruturas_de_controle">Estruturas de controle</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introdução">
+        <header>Introdução</header>
+        <p>
+          Portugol, também conhecido como Português Estruturado, é uma
+          pseudolinguagem em português, com o intuito de ensinar lógica de
+          programação para iniciantes. Foi criada pelos professores Antonio
+          Carlos Nicolodi e Antonio Manso em 1986.
+        </p>
+        <p>
+          O Visualg 3.0, interpretador desta linguagem, também foi criado pelo
+          professor Nicolodi. No entanto, nesta documentação será usado o
+          Portugol Studio.
+        </p>
+      </section>
+      <section class="main-section" id="Portugol_Studio">
+        <header>Portugol Studio</header>
+        <h5 class="subsection">Instalação</h5>
+        <p>
+          Após fazer o download do
+          <a href="http://lite.acad.univali.br/portugol/">Portugol Studio</a>,
+          basta abrir o arquivo executável se estiver usando Windows. As
+          instruções para a instalação no Ubuntu podem ser lidas
+          <a
+            href="https://devschannel.com/logica-de-programacao/portugol-studio"
+            >aqui</a
+          >.
+        </p>
+        <h5 class="subsection">Uso do programa</h5>
+        <p>
+          O uso do Portugol Studio é bem intuitivo, com diversas dicas para os
+          iniciantes. Abra um novo arquivo no canto superior esquerdo. Ao fazer
+          isto, verá que já existe uma estrutura inicial, o "hello world" em
+          português. Execute-o clicando no ícone do Play ou apertando
+          <span class="tecla">Shift</span> + <span class="tecla">F6</span>. O
+          comando da função escreva() faz com que o console retorne o texto
+          dentro do parênteses. Salve o algoritmo clicando no ícone de Pen Drive
+          ou apertando <span class="tecla">Ctrl</span> +
+          <span class="tecla">S</span>.
+        </p>
+        <p>
+          Todo algoritmo criado nesta linguagem deve ser estruturado desta
+          forma:
+        </p>
+        <div class="code">
+          <pre><code>
+      programa
+        {
+          funcao inicio()
+          {
+            **Seus comandos entram aqui**
+          }
+        }
+          </code></pre>
+        </div>
+      </section>
+      <section class="main-section" id="Entrada_e_Saída_de_dados">
+        <header>Entrada e Saída de dados</header>
+        <p>
+          Entrada de dados é o fornecimento de informações externas para o
+          programa. Digitar, mover o mouse por cima de algum elemento são
+          exemplos de entrada de dados, embora cada efeito no seu programa vá
+          ser diferente.
+        </p>
+        <p>
+          Já a saída de dados é o que é retornado de um programa para o
+          exterior, seja na tela, em uma impressão ou algo do tipo.
+        </p>
+        <h5 class="subsection">Saída de dados:</h5>
+        <p>
+          Como vimos anteriormente, o uso da função escreva() retorna algo no
+          console. Isso, por si só, já é saída de dados. E esta função não se
+          limita a texto, obviamente. É possível inserir variáveis e operações,
+          e termos a resposta no console. Observe o exemplo abaixo:
+        </p>
+        <div class="code">
+          <pre><code>
+      inteiro pontos = 10
+      escreva("Você fez ", pontos, " pontos!")
+          </code></pre>
+        </div>
+        <p>
+          Uma variável, como a variável <code>pontos</code>, se trata de um
+          espaço na memória que guarda uma informação. No código acima,
+          declaramos que a variável é 10, e ao invocá-la no
+          <code>escreva()</code>, fazemos com que a informação dentro dela seja
+          trazida para o console.
+        </p>
+
+        <h5 class="subsection">Entrada de dados:</h5>
+        <p>
+          A entrada de dados é feita com o comando <code>leia()</code>. Observe
+          o exemplo abaixo:
+        </p>
+        <div class="code">
+          <pre><code>
+      inteiro x, y, idade
+      escreva("Digite a sua idade\n")
+      leia(idade)
+      escreva("Digite as suas coordenadas\n")
+      leia(x, y)
+      escreva("Coordenadas:\n", x, " e ", y, "\n", "Idade:\n", idade, "\n")
+          </code></pre>
+        </div>
+        <p>
+          Observe que as variáveis <code>x</code>, <code>y</code> e
+          <code>idade</code> foram declaradas, mas ao contrário do exemplo
+          anterior a este, não lhes foi atribuído qualquer valor. E logo abaixo,
+          o comando <code>leia()</code> aceita estas variáveis como argumentos.
+          Isso significa que quem irá atribuir o valor às variáveis é o usuário,
+          por meio do console. Ou seja, entrada de dados.<br />
+          <br />
+          Observe o passo a passo do algoritmo abaixo:
+        </p>
+        <ol>
+          <li>Solicita que o usuário digite uma idade.</li>
+          <li>Lê esta idade digitada com o comando <code>leia()</code>.</li>
+          <li>
+            Solicita duas coordenadas e as lê com o comando <code>leia()</code>.
+            Observe que as duas variáveis são solicitadas em um comando, e é preciso entrar com uma vírgula separando as duas.
+          </li>
+          <li>Usa o comando <code>escreva()</code> para retornar as variáveis no console.</li>
+        </ol>
+      </section>
+      <section class="main-section" id="Variáveis">
+        <header>Variáveis</header>
+      </section>
+      <section class="main-section" id="Estruturas_de_controle">
+        <header>Estruturas de controle</header>
+      </section>
+    </main>
+  </body>
+</html>
