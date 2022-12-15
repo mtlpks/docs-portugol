@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto';
     background-color: #202124;
     color: whitesmoke;
+    margin: auto;
     
 }
 
@@ -16,7 +17,6 @@ header {
     font-size: 28px;
     padding: 10px 0;
     text-align: center;
-    font-family: 'Source Code Pro';
 }
 
 nav {
@@ -62,7 +62,7 @@ section {
     padding-left: 40px;
 }
 
-nav * {
+nav a {
     border-bottom: 2px solid gray;
 }
 
@@ -86,7 +86,7 @@ pre {
     font-size: smaller;
     border: 1px solid black;
     border-radius: 4px;
-    padding: 2px;
+    padding: 2px 5px;
 }
 
 p {
@@ -113,18 +113,20 @@ p {
         border: 1px solid white;
     } */
 
-    .nav-link, #Portugol {
+    /* .nav-link, #Portugol {
         margin-right: 17.8px;
-    }
+    } */
 
     main {
         position: relative;
         margin-top: 270px;
         margin-left: 0;
+        border-left: none;
     }
 
     p {
         width: 90%;
+        font-size: 10px;
     }
     
     .code {
@@ -133,7 +135,7 @@ p {
 
     code {
         width: 90%;
-        font-size: 10px;
+        font-size: 7px;
     }
 }
 
